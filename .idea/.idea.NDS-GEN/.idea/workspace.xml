@@ -33,7 +33,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="055f682d-a875-429d-81fe-c947299e4d4a" name="Default Changelist" comment="feat: base solution" />
+    <list default="true" id="055f682d-a875-429d-81fe-c947299e4d4a" name="Default Changelist" comment="feat: #2 - Greetings&#10;&#10;Implémentation et test de la fonction Greetings sous Windows.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,10 +45,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://A:/leroy/Documents/dev/NDS-GEN/Program.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/techspecs.md" />
+        <option value="$PROJECT_DIR$/Program.cs" />
       </list>
     </option>
   </component>
@@ -57,6 +64,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -97,7 +105,7 @@
       <updated>1608459496119</updated>
       <workItem from="1608459509998" duration="219000" />
       <workItem from="1608460072108" duration="1803000" />
-      <workItem from="1608464834717" duration="625000" />
+      <workItem from="1608464834717" duration="1946000" />
     </task>
     <task id="LOCAL-00001" summary="feat: base solution">
       <created>1608460585695</created>
@@ -106,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608460585695</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: #2 - Greetings&#10;&#10;Implémentation et test de la fonction Greetings sous Windows.">
+      <created>1608465911646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608465911646</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,25 +144,26 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat: base solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: base solution" />
+    <MESSAGE value="feat: #2 - Greetings&#10;&#10;Implémentation et test de la fonction Greetings sous Windows." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: #2 - Greetings&#10;&#10;Implémentation et test de la fonction Greetings sous Windows." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1608459729218">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1608466894323">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608459729218" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1608459729218">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608466894323" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1608466894323">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608459729218" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1608459729217">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608466894323" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1608466894323">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608459729217" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1608459729218">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608466894323" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1608466894323">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608459729218" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608466894323" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1608460796404">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
