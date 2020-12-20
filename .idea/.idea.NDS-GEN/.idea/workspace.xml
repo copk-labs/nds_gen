@@ -33,11 +33,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="055f682d-a875-429d-81fe-c947299e4d4a" name="Default Changelist" comment="feat: base solution">
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/sp-cification-fonctionnelle.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/techspecs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/user-story.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE/user-story.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="055f682d-a875-429d-81fe-c947299e4d4a" name="Default Changelist" comment="feat: base solution" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,6 +97,7 @@
       <updated>1608459496119</updated>
       <workItem from="1608459509998" duration="219000" />
       <workItem from="1608460072108" duration="1803000" />
+      <workItem from="1608464834717" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="feat: base solution">
       <created>1608460585695</created>
@@ -127,6 +124,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
