@@ -1,8 +1,11 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
 
 namespace NDS_GEN
 {
-    internal class Program
+    internal static class Program
     {
         public const string Version = "v-202012";
         public static int Main(string[] args)
@@ -48,6 +51,24 @@ namespace NDS_GEN
                 }
             }
             
+        }
+        
+        public static string CheckHash(string filename, string hashGiven)
+        {
+            SHA256 sha256 = SHA256.Create();
+            byte[] buffer;
+            string result = "";
+            using (FileStream stream = File.OpenRead(filename))
+            {
+                buffer = sha256.ComputeHash(stream);
+            }
+            foreach (byte b in buffer) result += b.ToString("x2");
+            return result == hashGiven ? result : throw new ArgumentNullException(nameof(hashGiven));
+        }
+        
+        public static string CheckInput(string input)
+        {
+            return input.All(char.IsLetter) ? input : throw new ArgumentNullException(nameof(input));;
         }
     }
 }

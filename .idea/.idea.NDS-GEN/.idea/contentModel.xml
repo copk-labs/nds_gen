@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="A:\leroy\Documents\dev\NDS-GEN" t="IncludeRecursive">
+    <e p="C:\Users\Charles Leroy\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Charles Leroy\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_NDS-GEN.1239224677.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Charles Leroy\Documents\dev\NDS-GEN" t="IncludeRecursive">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="NDS-GEN.csproj" t="IncludeRecursive" />
       <e p="NDS-GEN.sln" t="IncludeFlat" />
+      <e p="NDS.cs" t="Include" />
+      <e p="NDS_Components" t="Include">
+        <e p="User.cs" t="Include" />
+      </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Program.cs" t="Include" />
@@ -12,7 +19,5 @@
         <e p="AssemblyInfo.cs" t="Include" />
       </e>
     </e>
-    <e p="C:\Users\leroy\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\leroy\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_NDS-GEN.1891079831.00" t="ExcludeRecursive" />
   </component>
 </project>
