@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace NDS_GEN
 {
@@ -70,5 +71,6 @@ namespace NDS_GEN
         {
             return input.All(char.IsLetter) ? input : throw new ArgumentNullException(nameof(input));;
         }
+        
     }
 }

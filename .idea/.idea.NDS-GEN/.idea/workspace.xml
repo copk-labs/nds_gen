@@ -33,12 +33,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="055f682d-a875-429d-81fe-c947299e4d4a" name="Default Changelist" comment="feat: #2 - MainMenu&#10;&#10;Implémentation et test de la fonction MainMenu sous Windows.">
-      <change afterPath="$PROJECT_DIR$/NDS.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NDS_Components/User.cs" afterDir="false" />
+    <list default="true" id="055f682d-a875-429d-81fe-c947299e4d4a" name="Default Changelist" comment="major change">
+      <change afterPath="$PROJECT_DIR$/Encode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Index.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NDS-GEN/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NDS-GEN.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NDS-GEN.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NDS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NDS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NDS_Components/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NDS_Components/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +58,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/techspecs.md" />
-        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/test.nds" />
         <option value="$PROJECT_DIR$/NDS_Components/User.cs" />
+        <option value="$PROJECT_DIR$/Encode.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/NDS.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.cs" />
+        <option value="$PROJECT_DIR$/Index.cs" />
       </list>
     </option>
   </component>
@@ -74,6 +80,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="C#" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,7 +124,9 @@
       <workItem from="1608464834717" duration="2759000" />
       <workItem from="1608491120237" duration="676000" />
       <workItem from="1609252436140" duration="428000" />
-      <workItem from="1609252966017" duration="13266000" />
+      <workItem from="1609252966017" duration="13604000" />
+      <workItem from="1609336702566" duration="2440000" />
+      <workItem from="1609526019304" duration="6017000" />
     </task>
     <task id="LOCAL-00001" summary="feat: base solution">
       <created>1608460585695</created>
@@ -140,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608466992682</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="major change">
+      <created>1609278750569</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609278750569</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,28 +181,29 @@
     <MESSAGE value="feat: base solution" />
     <MESSAGE value="feat: #2 - Greetings&#10;&#10;Implémentation et test de la fonction Greetings sous Windows." />
     <MESSAGE value="feat: #2 - MainMenu&#10;&#10;Implémentation et test de la fonction MainMenu sous Windows." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: #2 - MainMenu&#10;&#10;Implémentation et test de la fonction MainMenu sous Windows." />
+    <MESSAGE value="major change" />
+    <option name="LAST_COMMIT_MESSAGE" value="major change" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1609252869680">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1609451966512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1609252869680" />
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1609451966512" />
     <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608467775229" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1609252869680">
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1609451966512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1609252869680" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1609451966512" />
     <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608467775228" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1609252869680">
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1609451966512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1609252869680" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1609451966512" />
     <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608467775228" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1609252869680">
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1609451966512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1609252869680" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1609451966512" />
     <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1920.1050@0.0.1366.738" timestamp="1608467775228" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1609255829106">
       <screen x="0" y="0" width="1280" height="689" />
@@ -208,5 +225,9 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1609258667219" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1609528283334">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1609528283334" />
   </component>
 </project>

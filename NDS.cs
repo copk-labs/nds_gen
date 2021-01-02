@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using NDS_GEN.NDS_Components;
 using static NDS_GEN.Program;
+using static NDS_GEN.ExtensionMethods;
 
 namespace NDS_GEN
 {
@@ -38,7 +40,11 @@ namespace NDS_GEN
         private DateTime _start; private DateTime Start { get; set; }
         private DateTime _end; private DateTime End { get; set; }
 
-        
+        private bool CheckSkel(string fileText)
+        {
+            Regex regex = new Regex(@"([A-Fa-f0-9]{64})\n(#? (.{1,100}))\n(## En-tête)\n((Description Courte: ).{1,200})\n(Créateur de la note: (.+\:.+.+\@.+\..+))\n(Période: (.+ \- .+))\n(## Corps Principal)\n(### Listes des Personnels)\n((.+ \| .+\n)+)(### Déroulement de l'activité)\n((.+\n)+)(### Consignes)\n((.+\n)+)(### Divers)\n((.+\n)+)", RegexOptions.Compiled | RegexOptions.ECMAScript);
+            return regex.IsMatch(fileText);
+        }
         
         //BODY PROPERTIES
         private User[] _attendee; private User[] Attendee
@@ -83,6 +89,8 @@ namespace NDS_GEN
         public Nds(string filePath)
         {
             //HEAD
+            if(CheckSkel(File.ReadAllText(filePath)))
+                throw new Exception("File does not have standard skel.");
             //TODO: parse for user data
             User1 = new User("", "", "");
             //TODO: parse for brief
@@ -117,8 +125,48 @@ namespace NDS_GEN
             Instructions = instructions;
             Divers = divers;
             AuthorizedPersonnel = authorizedPersonnel;
+
+            WriteNds(filePath, this);
         }
 
-        
+
+        private bool WriteNds(string filePath, Nds note)
+        {
+            var buffer = "";
+            //HEAD TO BUFFER
+            buffer = $"{buffer}{note.HashContent}\n# {note.Title}\n## En-tête\nDescription Courte: {note.Brief}\nCréateur de la note: {note.User1.Username}:{note.User1.Email}\nPériode: {note.Start.ToString(CultureInfo.CurrentCulture)} - {note.End.ToString(CultureInfo.CurrentCulture)}\n";
+            //BODY TO BUFFER
+            buffer = $"{buffer}## Corps Principal\n### Listes des Personnels\n";
+            foreach (var user in note.Attendee)
+            {
+                buffer = $"{buffer}{user.Name} | {user.Surname}\n";
+            }
+            buffer = $"{buffer}### Déroulement de l'activité\n";
+            foreach (var flow in note.Flow)
+            {
+                buffer = $"{buffer}{flow}\n";
+            }
+            buffer = $"{buffer}### Consignes\n";
+            foreach (var instruction in note.Instructions)
+            {
+                buffer = $"{buffer}{instruction}\n";
+            }
+            buffer = $"{buffer}### Divers\n";
+            foreach (var divers in note.Divers)
+            {
+                buffer = $"{buffer}{divers}\n";
+            }
+            buffer = $"{buffer}## Liste de diffusion\n";
+            foreach (var pax in note.AuthorizedPersonnel)
+            {
+                buffer = $"{buffer}{pax}\n";
+            }
+            
+            //WRITING BUFFER TO FILE
+            if (!CheckSkel(buffer)) return false;
+            File.WriteAllText(filePath, buffer.EncodeBase64());
+            return true;
+
+        }
     }
 }

@@ -8,12 +8,12 @@ namespace NDS_GEN.NDS_Components
     {
         //private string _id;
 
-        private string _name;private string Name
+        private string _name;public string Name
         {
             get => _name;
             set => _name = CheckInput(value);
         }
-        private string _surname;private string Surname
+        private string _surname;public string Surname
         {
             get => _surname;
             set => _surname = CheckInput(value);

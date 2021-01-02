@@ -3,9 +3,12 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Charles Leroy\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Charles Leroy\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_NDS-GEN.1239224677.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Charles Leroy\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Charles Leroy\Documents\dev\NDS-GEN" t="IncludeRecursive">
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Encode.cs" t="Include" />
+      <e p="Index.cs" t="Include" />
       <e p="NDS-GEN.csproj" t="IncludeRecursive" />
       <e p="NDS-GEN.sln" t="IncludeFlat" />
       <e p="NDS.cs" t="Include" />

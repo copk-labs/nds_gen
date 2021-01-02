@@ -38,6 +38,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Encode.cs" />
+        <Compile Include="Index.cs" />
         <Compile Include="NDS.cs" />
         <Compile Include="NDS_Components\User.cs" />
         <Compile Include="Program.cs" />
